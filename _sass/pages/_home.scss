@@ -1,0 +1,61 @@
+html.home {
+
+  .banner {
+    height: 100vh;
+    background: linear-gradient(rgba(115, 0, 123, 0.85) 0%, rgba(0, 124, 156, 0.93) 100%),url("../../assets/img/home_banner_bg.png");
+  }
+
+  .personal-container{
+    height: 100%;
+    padding: 2rem;
+
+    .personal{
+      width: 413px;
+      height: 100%;
+      background: #ffffff;
+      border-radius: 25px;
+      padding: 50px 30px;
+
+      img{
+        width: 165px;
+        height: 165px;
+        margin-bottom: 25px;
+      }
+      h4{
+        letter-spacing: 0.02em;
+        line-height: 23px;
+        text-align: center;
+        color: #717171;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        span{
+          font-weight: 300;
+        }
+      }
+
+      h5{
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        line-height: 13px;
+        text-align: center;
+        color: #02a47f;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+      p{
+        font-family: Roboto;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        line-height: 22px;
+        text-align: center;
+        color: #7b7b7b;
+      }
+    }
+  }
+
+}
