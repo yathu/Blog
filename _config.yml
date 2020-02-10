@@ -42,4 +42,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-keep_files: [assets]
+#keep_files: [assets]
