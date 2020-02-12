@@ -17,6 +17,7 @@ const cp = require("child_process");
 // cp.spawn = require('cross-spawn');
 
 const browserSync = require('browser-sync').create();
+var deploy      = require('gulp-gh-pages');
 
 // var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
@@ -113,6 +114,11 @@ function browserSyncReload(done) {
     browserSync.reload();
     done();
 }
+
+function deploy () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy())
+};
 
 // define complex tasks
 // const js = gulp.series(jsTask);
