@@ -142,6 +142,8 @@ function build () {
 // exports.build = build;
 // exports.default = series(clean, build);
 
+exports.build = build;
+
 exports.default = gulp.series(
     gulp.parallel(scssTask, jsTask, imgTask),
     browserSyncServe,
