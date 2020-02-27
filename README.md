@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+**Error: Gulp-gh-pages reports TypeError: Cannot read property '0' of null**
+solution:
 
-You can use the [editor on GitHub](https://github.com/yathu/Blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+1. CD the node_modules / GULP-GH-Pages / 
+2. NPM the install --save Gift @ 0 . 10 . 2 // specified version Installation 
+3. CD ../../ // moved back to the root directory 
+4. gulp deploy // re-execution deploy
+[More...](https://hsiangfeng.github.io/gulp/20191220/1507807439/ "For More")
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yathu/Blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Error: Command failed: fatal: pathspec '.' did not match any files**
+solution:
+1. leave a .publish folder in the repo via gitignore.
+[More...](https://github.com/harrypujols/gulp/issues/1 "More...")
