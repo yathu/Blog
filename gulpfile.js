@@ -124,6 +124,11 @@ function build () {
         .pipe(deploy())
 };
 
+gulp.task('deploy', function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy())
+});
+
 // define complex tasks
 // const js = gulp.series(jsTask);
 // const build = gulp.series(clean, gulp.parallel(scssTask, imgTask, jekyll, js));
@@ -141,8 +146,6 @@ function build () {
 
 // exports.build = build;
 // exports.default = series(clean, build);
-
-exports.build = build;
 
 exports.default = gulp.series(
     gulp.parallel(scssTask, jsTask, imgTask),
