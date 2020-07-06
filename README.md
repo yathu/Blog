@@ -1,3 +1,18 @@
+- Install node modules
+  ```
+  npm install
+  ```
+  
+- Run the project
+  ```
+  bundle exec jekyll serve  &  gulp
+  ```
+- Deploy to github pages
+    ````
+    gulp deploy
+    ````
+
+
 **Error: Gulp-gh-pages reports TypeError: Cannot read property '0' of null**
 solution:
 

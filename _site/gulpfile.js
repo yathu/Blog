@@ -115,10 +115,19 @@ function browserSyncReload(done) {
     done();
 }
 
-function deploy () {
+
+/**
+ * Push build to gh-pages
+ */
+function build () {
     return gulp.src("./_site/**/*")
         .pipe(deploy())
 };
+
+gulp.task('deploy', function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy())
+});
 
 // define complex tasks
 // const js = gulp.series(jsTask);
