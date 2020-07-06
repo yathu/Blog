@@ -1,3 +1,4 @@
+- **Don't ignore _site** 
 - Install node modules
   ```
   npm install
@@ -9,7 +10,7 @@
   ```
 - Deploy to github pages
     ````
-    gulp deploy
+    push to repo -> gulp deploy
     ````
 
 
