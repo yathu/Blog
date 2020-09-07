@@ -1,40 +1,76 @@
 html.home {
-
   .banner {
     height: 100vh;
-    background: linear-gradient(rgba(115, 0, 123, 0.85) 0%, rgba(0, 124, 156, 0.93) 100%),url("../../assets/img/home_banner_bg.png");
+    background-color: #14161e;
+    // background: linear-gradient(rgba(115, 0, 123, 0.85) 0%, rgba(0, 124, 156, 0.93) 100%),url("../../assets/img/home_banner_bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner-text-container {
+      text-align: center;
+
+      h1 {
+        font-family: Helvetica-Light;
+        font-size: 40px;
+        color: #d4d9e5;
+        letter-spacing: 20px;
+        text-align: left;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      span {
+        font-family: TsukuBRdGothic-Regular;
+        font-size: 16px;
+        color: #9ba4c1;
+        letter-spacing: 0.79px;
+        text-align: center;
+        line-height: 26px;
+      }
+      .social-media-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        a {
+          margin: 0px 12px;
+          color: #b3d7ff;
+          font-size: 18px;
+        }
+      }
+    }
   }
 
-  .personal-container{
+  .personal-container {
     height: 100%;
     padding: 2rem;
 
-    .personal{
+    .personal {
       width: 413px;
       height: 100%;
       background: #ffffff;
       border-radius: 25px;
       padding: 50px 30px;
 
-      img{
+      img {
         width: 165px;
         height: 165px;
         margin-bottom: 25px;
       }
 
-      h4{
+      h4 {
         letter-spacing: 0.02em;
         line-height: 23px;
         text-align: center;
         color: #717171;
         text-transform: uppercase;
         margin-bottom: 15px;
-        span{
+        span {
           font-weight: 300;
         }
       }
 
-      h5{
+      h5 {
         font-family: Roboto;
         font-weight: 500;
         font-size: 13px;
@@ -46,7 +82,7 @@ html.home {
         margin-bottom: 30px;
       }
 
-      p{
+      p {
         font-family: Roboto;
         font-weight: normal;
         font-style: italic;
@@ -55,9 +91,7 @@ html.home {
         line-height: 22px;
         text-align: center;
         color: #7b7b7b;
-
       }
     }
   }
-
 }
