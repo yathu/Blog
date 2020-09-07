@@ -18,6 +18,12 @@ html.home {
         text-align: left;
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: 575.98px) {
+          font-size: 18px;
+          letter-spacing: 8px;
+          margin-bottom: 25px;
+        }
       }
       span {
         font-family: TsukuBRdGothic-Regular;
