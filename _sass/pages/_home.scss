@@ -1,103 +1,22 @@
 html.home {
   .banner {
     height: 100vh;
-    background-color: #14161e;
-    // background: linear-gradient(rgba(115, 0, 123, 0.85) 0%, rgba(0, 124, 156, 0.93) 100%),url("../../assets/img/home_banner_bg.png");
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .banner-text-container {
-      text-align: center;
+    h1{
+      font-family: Rubik-Bold;
+      font-size: 77px;
+      color: #676767;
+    }
+    p{
+      font-family: Rubik-Light;
+      font-size: 18px;
+      color: #3B3B3B;
 
-      h1 {
-        font-family: Helvetica-Light;
-        font-size: 40px;
-        color: #d4d9e5;
-        letter-spacing: 20px;
-        text-align: left;
-        text-transform: uppercase;
-        text-align: center;
-
-        @media (max-width: 575.98px) {
-          font-size: 18px;
-          letter-spacing: 8px;
-          margin-bottom: 25px;
-        }
-      }
-      span {
-        font-family: TsukuBRdGothic-Regular;
-        font-size: 16px;
-        color: #9ba4c1;
-        letter-spacing: 0.79px;
-        text-align: center;
-        line-height: 26px;
-      }
-      .social-media-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-
-        a {
-          margin: 0px 12px;
-          color: #b3d7ff;
-          font-size: 18px;
-        }
-      }
     }
   }
 
-  .personal-container {
-    height: 100%;
-    padding: 2rem;
-
-    .personal {
-      width: 413px;
-      height: 100%;
-      background: #ffffff;
-      border-radius: 25px;
-      padding: 50px 30px;
-
-      img {
-        width: 165px;
-        height: 165px;
-        margin-bottom: 25px;
-      }
-
-      h4 {
-        letter-spacing: 0.02em;
-        line-height: 23px;
-        text-align: center;
-        color: #717171;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        span {
-          font-weight: 300;
-        }
-      }
-
-      h5 {
-        font-family: Roboto;
-        font-weight: 500;
-        font-size: 13px;
-        letter-spacing: 0.02em;
-        line-height: 13px;
-        text-align: center;
-        color: #02a47f;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-      }
-
-      p {
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 17px;
-        letter-spacing: 0.02em;
-        line-height: 22px;
-        text-align: center;
-        color: #7b7b7b;
-      }
-    }
-  }
 }
