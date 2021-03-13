@@ -3,11 +3,49 @@ title: home
 layout: home
 class: home
 ---
+<nav class="main-nav navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="{{site.baseurl}}/assets/img/nameLogo.svg" alt="logo">
+        </a>
 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary d-flex justify-content-center align-items-center " href="#">
+                        <ion-icon name="cloud-download-outline"></ion-icon>
+
+                        <span class="ml-2">Resume</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
 <div class="banner">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col">
+            <div class="col text-col pr-lg-5">
                 <h1>
                     HI,<br>
                     IM YATHAVAN
@@ -19,7 +57,7 @@ class: home
                     Contact Me
                 </button>
             </div>
-            <div class="col-auto">
+            <div class="col-lg-5 img-col d-flex justify-content-end">
                 <img src="{{site.baseurl}}/assets/img/person.svg" alt="Person | Developer"/>
             </div>
         </div>

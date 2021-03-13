@@ -29,4 +29,23 @@ h1,h2,h3,h4,h5,h6{
   color: #FFFFFF;
   padding-left: 30px;
   padding-right: 30px;
+
+  &:hover{
+    background-color: #fff;
+    border-color: #007AFF;
+    color: #007AFF;
+  }
+}
+
+.btn-outline-primary{
+  border-radius: 6px;
+  font-family: Rubik-Regular;
+  font-size: 16px;
+  color: #007AFF !important;
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+  border-color: #007AFF;
+  &:hover{
+    color: #FFFFFF !important;
+  }
 }
