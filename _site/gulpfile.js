@@ -90,7 +90,7 @@ function jekyll() {
 function watchTask(){
     gulp.watch(files.scssPath, scssTask);
     gulp.watch(files.jsPath, jsTask);
-    gulp.watch(['_includes/**', '_layouts/**/*', 'pages/**', '_site/*.html'], gulp.series(browserSyncReload));
+    gulp.watch(['*.html','_includes/**', '_layouts/**/*', 'pages/**',], gulp.series(jekyll,browserSyncReload));
     // gulp.watch(['_site/**'], gulp.series(browserSyncReload));
     gulp.watch(files.imgPath, imgTask);
 }
@@ -148,6 +148,7 @@ gulp.task('deploy', function () {
 // exports.default = series(clean, build);
 
 exports.default = gulp.series(
+    jekyll,
     gulp.parallel(scssTask, jsTask, imgTask),
     browserSyncServe,
     watchTask
