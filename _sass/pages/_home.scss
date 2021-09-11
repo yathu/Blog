@@ -3,6 +3,7 @@ html.home {
 
   .main-nav{
     font-family: OpenSans-Regular;
+    background-color: #0769fc;
 
     .navbar-collapse{
       ul.navbar-nav{
@@ -13,7 +14,7 @@ html.home {
 
           a{
             font-size: 14px;
-            color: #000000;
+            color: #ffffff;
             text-align: center;
           }
 
@@ -35,34 +36,45 @@ html.home {
   }
 
   .banner {
-    height: calc(100vh - 67px);
+    // height: calc(100vh - 67px);
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
+    margin-bottom: 50px;
 
     .text-col {
+      text-align: center;
       h1 {
         font-family: Rubik-Bold;
-        font-size: 77px;
+        font-size: 24px;
         color: #676767;
-      }
-      p {
-        font-family: Rubik-Light;
-        font-size: 18px;
-        color: #3B3B3B;
+        margin-bottom: 5rem;
+        margin-top: 50px;
 
       }
-    }
 
-    .img-col{
-
-      img{
-        max-width: 435px;
+      form{
+        max-width: 800px;
+        margin:auto;
       }
     }
 
 
+  }
+
+  .download-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+      .card-body{
+        img{
+          max-width: 200px;
+        }
+      }
+    }
   }
 
 }

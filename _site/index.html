@@ -14,7 +14,8 @@
 
 <nav class="main-nav navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
@@ -27,23 +28,10 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary d-flex justify-content-center align-items-center " href="#">
-                        <ion-icon name="cloud-download-outline"></ion-icon>
-
-                        <span class="ml-2">Resume</span>
-                    </a>
                 </li>
 
             </ul>
@@ -54,42 +42,60 @@
 <div class="banner">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col text-col pr-lg-5">
+            <div class="col text-col">
                 <h1>
-                    HI,<br>
-                    IM YATHAVAN
+                    Youtube Downloader
                 </h1>
-                <p>
-                    I'm a professional Mobile App Developer with 3+ years of industry experience in android development and 1+ years in Flutter development and Specilize in Responsive web design.
-                </p>
-                <button class="btn btn-primary">
-                    Contact Me
-                </button>
-            </div>
-            <div class="col-lg-5 img-col d-flex justify-content-end">
-                <img src="/assets/img/person.svg" alt="Person | Developer"/>
+                <form>
+                    <div class="form-row align-items-start">
+                        <div class="col">
+                            <label class="sr-only" for="inlineFormInput">Name</label>
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                            <small class="form-text text-muted">
+                                By using our service you accept our
+                                <a href="">Terms of Service</a>
+                                and
+                                <a href="">Privacy Policy</a>
+                            </small>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
-
-<!--  <div class="social-media-container">-->
-<!--    <a href="https://github.com/yathu">-->
-<!--      <i class="fa fa-github" aria-hidden="true"></i>-->
-<!--    </a>-->
-<!--    <a href="https://stackoverflow.com/users/3702886/yathavan">-->
-<!--      <i class="fa fa-stack-overflow" aria-hidden="true"></i>-->
-<!--    </a>-->
-<!--    <a href="https://www.linkedin.com/in/yathavancom/">-->
-<!--      <i class="fa fa-linkedin" aria-hidden="true"></i>-->
-<!--    </a>-->
-<!--    <a href="https://www.facebook.com/y.yathavan">-->
-<!--      <i class="fa fa-facebook" aria-hidden="true"></i>-->
-<!--    </a>-->
-<!--  </div>-->
-
-
+<div class="download-container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-auto">
+                    <img src="assets/img/person.svg" alt="logo">
+                </div>
+                <div class="col">
+                    <p class="card-text mb-1">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="text-muted mb-4">0:30</div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Download
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

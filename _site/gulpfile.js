@@ -17,7 +17,7 @@ const cp = require("child_process");
 // cp.spawn = require('cross-spawn');
 
 const browserSync = require('browser-sync').create();
-var deploy      = require('gulp-gh-pages');
+var deploy = require('gulp-gh-pages');
 
 // var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
@@ -31,27 +31,27 @@ const files = {
 }
 
 // Sass task: compiles the style.scss file into style.css
-function scssTask(){
+function scssTask() {
     return gulp
         .src(files.scssPath)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([ autoprefixer(),cssnano() ]))
+        .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(gulp.dest('_site/assets/css/')) // put final CSS in dist folder
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({ stream: true }))
 }
 
 // JS task: concatenates and uglifies JS files to script.js
-function jsTask(){
+function jsTask() {
     return gulp
         .src([
-        files.jsPath
-        //,'!' + 'includes/js/jquery.min.js', // to exclude any specific files
-    ])
+            files.jsPath
+            //,'!' + 'includes/js/jquery.min.js', // to exclude any specific files
+        ])
         .pipe(uglify())
         .pipe(gulp.dest('_site/assets/js/'))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({ stream: true }))
 }
 
 //img task
@@ -61,19 +61,18 @@ function imgTask() {
         .pipe(newer("_site/assets/img/"))
         .pipe(imagemin())
         .pipe(gulp.dest("_site/assets/img/"))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({ stream: true }))
 }
 
 // Jekyll
 function jekyll() {
-// cp.spawn = require('cross-spawn');
-//     cp.exec = require('gulp-exec');
+    // cp.spawn = require('cross-spawn');
+    //     cp.exec = require('gulp-exec');
 
     var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
-    return cp.spawn(jekyll, ['build']);
+    // return cp.spawn(jekyll, ['build']);
 
-
-    // return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit" });
+    return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit" });
 }
 
 // function jekyll (){
@@ -87,10 +86,10 @@ function jekyll() {
 // If any change, run scss and js tasks simultaneously
 // watch([files.scssPath, files.jsPath], parallel(scssTask, jsTask, browserSyncReload));
 
-function watchTask(){
+function watchTask() {
     gulp.watch(files.scssPath, scssTask);
     gulp.watch(files.jsPath, jsTask);
-    gulp.watch(['*.html','_includes/**', '_layouts/**/*', 'pages/**',], gulp.series(jekyll,browserSyncReload));
+    gulp.watch(['*.html', '_includes/**', '_layouts/**/*', 'pages/**',], gulp.series(jekyll, browserSyncReload));
     // gulp.watch(['_site/**'], gulp.series(browserSyncReload));
     gulp.watch(files.imgPath, imgTask);
 }
@@ -119,7 +118,7 @@ function browserSyncReload(done) {
 /**
  * Push build to gh-pages
  */
-function build () {
+function build() {
     return gulp.src("./_site/**/*")
         .pipe(deploy())
 };
